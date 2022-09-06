@@ -12,5 +12,5 @@ dependencies:
   - pandas
   - time
   - pyyaml
-  - json
+  - requests
 prefix: /Users/adrianochs/opt/anaconda3/envs/acled
