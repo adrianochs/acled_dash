@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd
 import time
 import yaml
+import os
 
 # Define strings
 # ACLED API access
@@ -57,6 +58,7 @@ def data_loader_acled(acled_var_set):
     df_acled['prio_grid'] = ((90 + ((df_acled['latitude'].astype('float') * 2).apply(np.floor) / 2)) * 2 + 1 - 1) * \
         720 + (180 + ((df_acled['longitude'].astype('float') * 2).apply(np.floor) / 2)) * 2 + 1
     # Save as csv
+    os.makedirs('data', exist_ok=True)  # make data directory if not exists
     df_acled.to_csv('data/ACLED_data.csv')
 
     return print('Done!')
