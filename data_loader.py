@@ -90,4 +90,4 @@ if __name__ == '__main__':
     end = time.time()
     seconds = end - start
     minutes = round(seconds/60, 1)
-    print(f"Done! It took {minutes} minutes.")
+    print(f"It took {minutes} minutes.")
