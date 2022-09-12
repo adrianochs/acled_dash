@@ -10,10 +10,6 @@ import yaml
 # Define strings
 # ACLED API access
 
-
-api_key_private = 'r8n2SnD9xPdytpRimZkW'
-email_private = 'acro2@cam.ac.uk'
-
 # Variables to download from ACLED
 acled_vars = ['year', 'event_date', 'event_type', 'country', 'region', 'longitude', 'latitude', 'fatalities', 'notes',
               'geo_precision', 'time_precision', 'inter1', 'inter2', 'source_scale']
@@ -81,8 +77,6 @@ def api_access_tokens():
 
     return api_key_, api_user_
 
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print('Downloading ACLED Data')
     start = time.time()
