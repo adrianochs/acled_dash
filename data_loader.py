@@ -8,13 +8,6 @@ import time
 import yaml
 import os
 
-# Define strings
-# ACLED API access
-
-
-api_key_private = 'r8n2SnD9xPdytpRimZkW'
-email_private = 'acro2@cam.ac.uk'
-
 # Variables to download from ACLED
 acled_vars = ['year', 'event_date', 'event_type', 'country', 'region', 'longitude', 'latitude', 'fatalities', 'notes',
               'geo_precision', 'time_precision', 'inter1', 'inter2', 'source_scale']
